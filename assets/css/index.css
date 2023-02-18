@@ -60,6 +60,19 @@ header .btn {
   border-radius: 20px;
   text-decoration: none;
 }
+.restaurants {
+  background-color: #eaeaea;
+  padding: 54px 20px;
+}
+.list-card {
+  padding-top: 20px;
+}
+.list-card .card {
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: white;
+  padding: 12px;
+}
 footer {
   color: white;
   background-color: #353535;

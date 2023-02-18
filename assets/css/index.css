@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+.shrikaland {
+  font-family: "shrikhand";
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header img {
+  padding: 14px 0 0 5px;
+}
+header .title {
+  background-color: #eaeaea;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header .reservation {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 287px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header .btn {
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: purple;
+  padding: 10px;
+}
+
+.fonctionnement {
+  padding: 48px 20px;
+}
+.fonctionnement .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 26px;
+}
+.fonctionnement .btn a {
+  border: 1px solid;
+  background-color: #eaeaea;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+footer {
+  color: white;
+  background-color: #353535;
+  padding: 22px;
+}
+footer h2 {
+  font-weight: 400;
+  font-size: 18px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0;
+  text-decoration: none;
+}
+footer svg {
+  width: 137px;
+  color: white;
+}

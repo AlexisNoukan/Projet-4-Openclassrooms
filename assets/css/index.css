@@ -16,7 +16,7 @@ header {
   flex-direction: column;
 }
 header img {
-  padding: 14px 0 0 5px;
+  padding: 14px 0 5px 0;
 }
 header .title {
   background-color: #eaeaea;
@@ -66,11 +66,21 @@ header .btn {
 }
 .list-card {
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 .list-card .card {
-  border: 1px solid;
+  border: 1px;
   border-radius: 20px;
   background-color: white;
+}
+.list-card .card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.list-card .card .card-text {
   padding: 12px;
 }
 footer {

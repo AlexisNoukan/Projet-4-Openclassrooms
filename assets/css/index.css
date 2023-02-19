@@ -21,10 +21,13 @@ header img {
 header .title {
   background-color: #eaeaea;
   width: 100%;
-  padding: 16px;
+  padding: 16px 0;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
 }
 
 header .reservation {
@@ -37,6 +40,7 @@ header .reservation {
   align-items: center;
   text-align: center;
 }
+
 header .btn {
   border: 1px solid;
   border-radius: 20px;

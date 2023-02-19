@@ -39,6 +39,7 @@ header .reservation {
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 header .btn {
@@ -63,6 +64,9 @@ header .btn {
   padding: 10px;
   border-radius: 20px;
   text-decoration: none;
+}
+.fonctionnement .btn-conntent {
+  display: flex;
 }
 .restaurants {
   background-color: #eaeaea;

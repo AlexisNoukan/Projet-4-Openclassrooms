@@ -1,24 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
 * {
   padding: 0;
   margin: 0;
   font-family: "Roboto";
 }
+
 .shrikaland {
   font-family: "shrikhand";
 }
-header {
+
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-header img {
+.header .header__img {
   padding: 14px 0 5px 0;
 }
-header .title {
+.header .header__title {
   background-color: #eaeaea;
   width: 100%;
   padding: 16px 0;
@@ -29,8 +30,7 @@ header .title {
   justify-content: center;
   gap: 17px;
 }
-
-header .reservation {
+.header .header__reservation {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -41,8 +41,7 @@ header .reservation {
   text-align: center;
   width: 100%;
 }
-
-header .btn {
+.header .header__btn {
   border: 1px solid;
   border-radius: 20px;
   background-color: purple;
@@ -52,22 +51,20 @@ header .btn {
 .fonctionnement {
   padding: 48px 20px;
 }
-.fonctionnement .btn {
+.fonctionnement .fonctionnement__btns {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-top: 26px;
 }
-
-.fonctionnement .btn a {
+.fonctionnement .fonctionnement__btns .fonctionnement__btn {
   border: 1px solid;
   background-color: #eaeaea;
   padding: 10px;
   border-radius: 20px;
   text-decoration: none;
 }
-
-.fonctionnement .btn .number {
+.fonctionnement .fonctionnement__btns .fonctionnement__number {
   background-color: purple;
   color: white;
   border-radius: 50%;
@@ -75,40 +72,44 @@ header .btn {
   height: 20px;
   text-align: center;
 }
-.fonctionnement .btn-content {
+.fonctionnement .fonctionnement__btn-content {
   display: flex;
   align-items: center;
   gap: 10px;
   position: relative;
   left: -20px;
 }
-.fonctionnement .btn-content .icon {
+.fonctionnement .fonctionnement__btn-content .icon {
   margin-left: 15px;
 }
+
 .restaurants {
   background-color: #eaeaea;
   padding: 54px 20px;
 }
-.list-card {
+
+.restaurants__list-card {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-.list-card .card {
+.restaurants__list-card .restaurants__card {
   border: 1px;
   border-radius: 20px;
   background-color: white;
 }
-.list-card .card img {
+.restaurants__list-card .restaurants__card .restaurants__img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px 20px 0 0;
   height: 120px;
 }
-.list-card .card .card-text {
+.restaurants__list-card .restaurants__card .restaurants__card-text {
   padding: 12px;
 }
+
 footer {
   color: white;
   background-color: #353535;
@@ -129,4 +130,4 @@ footer ul {
 footer svg {
   width: 137px;
   color: white;
-}
+}/*# sourceMappingURL=index.css.map */

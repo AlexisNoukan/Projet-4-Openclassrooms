@@ -1,0 +1,21 @@
+footer {
+  color: white;
+  background-color: #353535;
+  padding: 22px;
+  h2 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 0;
+    text-decoration: none;
+  }
+  svg {
+    width: 137px;
+    color: white;
+  }
+}

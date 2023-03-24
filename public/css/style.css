@@ -101,6 +101,13 @@
 }
 .restaurants__list-card .restaurants__card .restaurants__card-text {
   padding: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.restaurants__link {
+  text-decoration: none;
+  color: black;
 }
 
 .reservation {

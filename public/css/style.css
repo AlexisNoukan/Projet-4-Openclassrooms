@@ -14,7 +14,6 @@
 }
 
 .button {
-  margin: 40px 0;
   padding: 20px;
   border: 1px solid;
   border-radius: 30px;
@@ -25,7 +24,6 @@
 }
 
 .button {
-  margin: 40px 0;
   padding: 20px;
   border: 1px solid;
   border-radius: 30px;
@@ -126,6 +124,7 @@ footer {
   color: white;
   background-color: #353535;
   padding: 22px;
+  margin-top: 50px;
 }
 footer h2 {
   font-weight: 400;
@@ -197,13 +196,20 @@ footer svg {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.main__restaurant {
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
   background-color: #f6f6f6;
+}
+
+.main__restaurant {
   padding: 10px 20px;
   border: 1px;
   border-radius: 30px 30px 0 0;
   position: relative;
   top: 220px;
+  background-color: #f6f6f6;
 }
 
 .main__title {

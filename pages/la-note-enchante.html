@@ -1,10 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <title>Oh my food</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta />
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body>
+    <header class="menu-header">
+      <i class="fa-solid fa-arrow-left"></i>
+      <img
+        class="menu-header__img"
+        src="../assets/logo/ohmyfood@2x.svg"
+        alt="Logo"
+      />
+    </header>
+    <main class="main">
+      <img
+        src="../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+        alt="le délice des sens"
+        class="main__img"
+      />
+      <div class="main__restaurant">
+        <div class="main__title shrikaland">
+          <h1>Le délice des sens</h1>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <section class="menu">
+          <div class="menu__title"><h2>ENTRÉES</h2></div>
+          <div class="menu__cards">
+            <div class="menu__card">
+              <h3>Tartare de thon</h3>
+              <div>
+                <p>Assaisonné au yuzu</p>
+                <p>25€</p>
+              </div>
+            </div>
+            <div class="menu__card">
+              <h3>Bouché de homard croustillant</h3>
+              <div>
+                <p>Et sa farandole de petits légumes</p>
+                <p>35€</p>
+              </div>
+            </div>
+            <div class="menu__card">
+              <h3>Velouté de cèpes</h3>
+              <div>
+                <p>Aux truffes</p>
+                <p>20€</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="menu">
+          <div class="menu__title"><h2>PLATS</h2></div>
+          <div class="menu__cards">
+            <div class="menu__card">
+              <h3>Poulet rôti aux herbes de Provences</h3>
+              <div>
+                <p>Et sa crème de truffe</p>
+                <p>40€</p>
+              </div>
+            </div>
+            <div class="menu__card">
+              <h3>Langouste rôtie</h3>
+              <div>
+                <p>Et ses légumes de saison</p>
+                <p>35€</p>
+              </div>
+            </div>
+            <div class="menu__card">
+              <h3>Côte de boeuf Angus</h3>
+              <div>
+                <p>Et sa purée de panais</p>
+                <p>44€</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="menu">
+          <div class="menu__title"><h2>DESSERTS</h2></div>
+          <div class="menu__cards">
+            <div class="menu__card">
+              <h3>Farnadole de desserts</h3>
+              <div>
+                <p>Du chef</p>
+                <p>18€</p>
+              </div>
+            </div>
+            <div class="menu__card">
+              <h3>Créme brulée</h3>
+              <div>
+                <p>Revisité</p>
+                <p>22€</p>
+              </div>
+            </div>
+            <div class="menu__card">
+              <h3>Tiramisu</h3>
+              <div>
+                <p>À la noisette</p>
+                <p>23€</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="main__order"></div>
+      </div>
+      <a class="button" href="#">Commander</a>
+    </main>
+    <footer>
+      <h2 class="shrikaland">ohmyfood</h2>
+      <ul>
+        <li>Proposer un restaurant</li>
+        <li>Devenir partenaire</li>
+        <li>Mention Légales</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+  </body>
 </html>

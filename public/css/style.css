@@ -15,6 +15,7 @@
 
 .button {
   padding: 10px;
+  margin-bottom: 40px;
   border: 1px solid;
   border-radius: 30px;
   text-align: center;
@@ -32,6 +33,7 @@
 
 .button {
   padding: 10px;
+  margin-bottom: 40px;
   border: 1px solid;
   border-radius: 30px;
   text-align: center;
@@ -138,7 +140,6 @@ footer {
   color: white;
   background-color: #353535;
   padding: 22px;
-  margin-top: 50px;
 }
 footer h2 {
   font-weight: 400;

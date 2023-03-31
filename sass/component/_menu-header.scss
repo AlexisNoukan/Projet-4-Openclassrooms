@@ -1,6 +1,15 @@
 .menu-header {
   display: flex;
   align-items: center;
-  gap: 50px;
-  padding: 10px;
+  gap: 65px;
+  padding: 15px;
+}
+.menu-header__link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-header__logo {
+  text-align: center;
 }

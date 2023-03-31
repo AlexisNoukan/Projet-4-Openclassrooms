@@ -19,7 +19,7 @@
   border: 1px solid;
   border-radius: 30px;
   text-align: center;
-  background-color: purple;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   text-decoration: none;
   color: white;
   width: 50%;
@@ -37,7 +37,7 @@
   border: 1px solid;
   border-radius: 30px;
   text-align: center;
-  background-color: purple;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   text-decoration: none;
   color: white;
   width: 50%;
@@ -59,14 +59,14 @@
   padding-top: 26px;
 }
 .fonctionnement .fonctionnement__btns .fonctionnement__btn {
-  border: 1px solid;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #eaeaea;
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   text-decoration: none;
 }
 .fonctionnement .fonctionnement__btns .fonctionnement__number {
-  background-color: purple;
+  background-color: #9356dc;
   color: white;
   border-radius: 50%;
   width: 20px;
@@ -78,17 +78,31 @@
   align-items: center;
   gap: 10px;
   position: relative;
-  left: -20px;
+  left: -30px;
 }
 .fonctionnement .fonctionnement__btn-content .icon {
   margin-left: 15px;
 }
 
+.hearth-icon:hover {
+  background-color: #9356dc;
+}
+
 .menu-header {
   display: flex;
   align-items: center;
-  gap: 50px;
-  padding: 10px;
+  gap: 65px;
+  padding: 15px;
+}
+
+.menu-header__link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-header__logo {
+  text-align: center;
 }
 
 .restaurants {
@@ -191,8 +205,8 @@ footer svg {
   padding-top: 40px;
 }
 
-.menu__title {
-  border-bottom: 1px solid;
+.green-line {
+  border-bottom: 4px solid #99e2d0;
 }
 
 .menu__cards {

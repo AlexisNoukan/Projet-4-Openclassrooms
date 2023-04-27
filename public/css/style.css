@@ -84,6 +84,15 @@
   margin-left: 15px;
 }
 
+@media (min-width: 375px) {
+  .fonctionnement__btns {
+    flex-direction: row;
+    width: 100%;
+  }
+  .fonctionnement__btn {
+    width: 20%;
+  }
+}
 .hearth-icon:hover {
   background-color: #9356dc;
 }
@@ -141,6 +150,7 @@
 @media (min-width: 375px) {
   .restaurants__list-card {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .restaurants__card {
     width: 25%;
@@ -180,6 +190,13 @@ footer svg {
   color: white;
 }
 
+@media (min-width: 375px) {
+  footer,
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .header {
   display: flex;
   justify-content: center;
@@ -243,7 +260,6 @@ footer svg {
   display: flex;
   flex-direction: column;
   gap: 250px;
-  background-color: #f6f6f6;
 }
 
 .main__restaurant {
@@ -266,6 +282,15 @@ footer svg {
   height: 275px;
   width: 375px;
   position: absolute;
+}
+
+@media (min-width: 375px) {
+  .main__img {
+    width: 100%;
+  }
+  .main__restaurant {
+    margin: 0 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

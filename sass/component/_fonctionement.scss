@@ -32,3 +32,13 @@
     }
   }
 }
+
+@media (min-width: 375px) {
+  .fonctionnement__btns {
+    flex-direction: row;
+    width: 100%;
+  }
+  .fonctionnement__btn {
+    width: 20%;
+  }
+}

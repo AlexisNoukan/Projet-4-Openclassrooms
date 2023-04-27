@@ -28,3 +28,12 @@
   text-decoration: none;
   color: black;
 }
+
+@media (min-width: 375px) {
+  .restaurants__list-card {
+    flex-direction: row;
+  }
+  .restaurants__card {
+    width: 25%;
+  }
+}

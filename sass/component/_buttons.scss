@@ -1,6 +1,5 @@
 .button {
   padding: 10px;
-  margin-bottom: 40px;
   border: 1px solid;
   border-radius: 30px;
   text-align: center;
@@ -10,7 +9,15 @@
   width: 50%;
 }
 .button__order {
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f6f6f6;
+}
+
+@media (min-width: 375px) {
+  .button__order {
+    margin: 0 100px;
+  }
 }

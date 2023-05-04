@@ -15,7 +15,6 @@
 
 .button {
   padding: 10px;
-  margin-bottom: 40px;
   border: 1px solid;
   border-radius: 30px;
   text-align: center;
@@ -26,14 +25,20 @@
 }
 
 .button__order {
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f6f6f6;
 }
 
+@media (min-width: 375px) {
+  .button__order {
+    margin: 0 100px;
+  }
+}
 .button {
   padding: 10px;
-  margin-bottom: 40px;
   border: 1px solid;
   border-radius: 30px;
   text-align: center;
@@ -44,11 +49,18 @@
 }
 
 .button__order {
+  padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f6f6f6;
 }
 
+@media (min-width: 375px) {
+  .button__order {
+    margin: 0 100px;
+  }
+}
 .fonctionnement {
   padding: 48px 20px;
 }
@@ -261,10 +273,14 @@
   align-items: center;
 }
 
+.check-icon {
+  visibility: hidden;
+}
+
 .main {
   display: flex;
   flex-direction: column;
-  gap: 250px;
+  gap: 220px;
 }
 
 .main__restaurant {

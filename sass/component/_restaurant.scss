@@ -1,12 +1,13 @@
 .restaurants {
   background-color: #eaeaea;
   padding: 54px 20px;
+  margin: auto;
 }
 .restaurants__list-card {
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 18px;
+
   .restaurants__card {
     border: 1px;
     border-radius: 20px;
@@ -24,6 +25,7 @@
     }
   }
 }
+
 .restaurants__link {
   text-decoration: none;
   color: black;
@@ -31,10 +33,13 @@
 
 @media (min-width: 375px) {
   .restaurants__list-card {
-    flex-direction: row;
     flex-wrap: wrap;
   }
   .restaurants__card {
     width: 25%;
+  }
+  .list-card__row {
+    display: flex;
+    gap: 18px;
   }
 }

@@ -1,18 +1,15 @@
-footer {
+.footer {
   color: white;
   background-color: #353535;
   padding: 22px;
-  h2 {
+  .footer__title {
     font-weight: 400;
     font-size: 18px;
   }
-  ul {
-    list-style: none;
+  .footer__menu {
     display: flex;
     flex-direction: column;
     gap: 7px;
-    padding: 0;
-    text-decoration: none;
   }
   svg {
     width: 137px;
@@ -20,9 +17,14 @@ footer {
   }
 }
 @media (min-width: 375px) {
-  footer,
-  ul {
+  .footer {
     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer__menu {
     flex-direction: row;
+    gap: 20px;
   }
 }

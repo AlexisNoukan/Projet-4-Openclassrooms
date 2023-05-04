@@ -16,15 +16,15 @@
     color: white;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 20px;
-  }
-  .footer__menu {
-    flex-direction: row;
-    gap: 20px;
+    .footer__menu {
+      flex-direction: row;
+      gap: 20px;
+    }
   }
 }

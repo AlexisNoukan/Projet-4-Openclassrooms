@@ -32,7 +32,7 @@
   background-color: #f6f6f6;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .button__order {
     margin: 0 100px;
   }
@@ -56,7 +56,7 @@
   background-color: #f6f6f6;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .button__order {
     margin: 0 100px;
   }
@@ -96,12 +96,12 @@
   margin-left: 15px;
 }
 
-@media (min-width: 375px) {
-  .fonctionnement__btns {
+@media (min-width: 376px) {
+  .fonctionnement .fonctionnement__btns {
     flex-direction: row;
     width: 100%;
   }
-  .fonctionnement__btn {
+  .fonctionnement .fonctionnement__btn {
     width: 20%;
   }
 }
@@ -141,6 +141,8 @@
   border: 1px;
   border-radius: 20px;
   background-color: white;
+  text-decoration: none;
+  color: black;
 }
 .restaurants__list-card .restaurants__card .restaurants__img {
   width: 100%;
@@ -150,25 +152,19 @@
 }
 .restaurants__list-card .restaurants__card .restaurants__card-text {
   padding: 12px;
-  text-decoration: none;
-  color: black;
 }
 
-.restaurants__link {
-  text-decoration: none;
-  color: black;
-}
-
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .restaurants__list-card {
-    flex-wrap: wrap;
+    align-items: center;
   }
-  .restaurants__card {
-    width: 25%;
+  .restaurants__list-card .restaurants__card {
+    flex: 1;
   }
   .list-card__row {
     display: flex;
     gap: 18px;
+    width: 100%;
   }
 }
 .reservation {
@@ -202,14 +198,14 @@
   color: white;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 20px;
   }
-  .footer__menu {
+  .footer .footer__menu {
     flex-direction: row;
     gap: 20px;
   }
@@ -305,7 +301,7 @@
   position: absolute;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .main__img {
     width: 100%;
   }

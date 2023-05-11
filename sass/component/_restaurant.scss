@@ -23,6 +23,11 @@
     .restaurants__card-text {
       padding: 12px;
     }
+    .restaurants__card-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
   }
 }
 

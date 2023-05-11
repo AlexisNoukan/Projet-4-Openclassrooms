@@ -85,6 +85,9 @@
   height: 20px;
   text-align: center;
 }
+.fonctionnement .fonctionnement__btns .fonctionnement__text {
+  color: black;
+}
 .fonctionnement .fonctionnement__btn-content {
   display: flex;
   align-items: center;
@@ -161,6 +164,11 @@
 }
 .restaurants__list-card .restaurants__card .restaurants__card-text {
   padding: 12px;
+}
+.restaurants__list-card .restaurants__card .restaurants__card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 @media (min-width: 376px) {

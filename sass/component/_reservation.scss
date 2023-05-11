@@ -9,3 +9,9 @@
   text-align: center;
   width: 100%;
 }
+
+@media (min-width: 376px) {
+  .reservation {
+    gap: 50px;
+  }
+}

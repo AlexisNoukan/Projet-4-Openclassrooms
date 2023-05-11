@@ -27,8 +27,16 @@
 }
 
 @media (min-width: 376px) {
+  .restaurants {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
   .restaurants__list-card {
     align-items: center;
+    width: 90%;
+
     .restaurants__card {
       flex: 1;
     }

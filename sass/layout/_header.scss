@@ -25,3 +25,12 @@
     padding: 10px;
   }
 }
+
+@media (min-width: 376px) {
+  .header {
+    .header__img {
+      padding-top: 28px;
+      padding-bottom: 30px;
+    }
+  }
+}

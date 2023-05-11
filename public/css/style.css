@@ -97,12 +97,21 @@
 }
 
 @media (min-width: 376px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  .fonctionnement .fonctionnement__title {
+    padding-left: 50px;
+  }
   .fonctionnement .fonctionnement__btns {
     flex-direction: row;
-    width: 100%;
+    width: 90%;
   }
   .fonctionnement .fonctionnement__btn {
-    width: 20%;
+    width: 30%;
   }
 }
 .hearth-icon:hover {
@@ -155,8 +164,15 @@
 }
 
 @media (min-width: 376px) {
+  .restaurants {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
   .restaurants__list-card {
     align-items: center;
+    width: 90%;
   }
   .restaurants__list-card .restaurants__card {
     flex: 1;
@@ -179,6 +195,11 @@
   width: 100%;
 }
 
+@media (min-width: 376px) {
+  .reservation {
+    gap: 50px;
+  }
+}
 .footer {
   color: white;
   background-color: #353535;
@@ -237,6 +258,12 @@
   padding: 10px;
 }
 
+@media (min-width: 376px) {
+  .header .header__img {
+    padding-top: 28px;
+    padding-bottom: 30px;
+  }
+}
 .menu {
   display: flex;
   flex-direction: column;

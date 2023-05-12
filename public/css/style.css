@@ -170,6 +170,9 @@
   justify-content: space-between;
   align-items: baseline;
 }
+.restaurants__list-card .restaurants__card .restaurants__alert {
+  position: absolute;
+}
 
 @media (min-width: 376px) {
   .restaurants {

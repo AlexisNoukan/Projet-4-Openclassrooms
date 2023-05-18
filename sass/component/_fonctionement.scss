@@ -49,9 +49,10 @@
     .fonctionnement__btns {
       flex-direction: row;
       width: 90%;
+      justify-content: center;
     }
     .fonctionnement__btn {
-      width: 30%;
+      width: 323px;
     }
   }
 }

@@ -112,9 +112,10 @@
   .fonctionnement .fonctionnement__btns {
     flex-direction: row;
     width: 90%;
+    justify-content: center;
   }
   .fonctionnement .fonctionnement__btn {
-    width: 30%;
+    width: 323px;
   }
 }
 .hearth-icon:hover {
@@ -155,6 +156,7 @@
   background-color: white;
   text-decoration: none;
   color: black;
+  max-width: 500px;
 }
 .restaurants__list-card .restaurants__card .restaurants__img {
   width: 100%;
@@ -173,6 +175,12 @@
 .restaurants__list-card .restaurants__card .restaurants__alert {
   position: absolute;
 }
+.restaurants__list-card .restaurants__card .star {
+  margin-right: 20px;
+}
+.restaurants__list-card .restaurants__card .star:hover {
+  background-color: black;
+}
 
 @media (min-width: 376px) {
   .restaurants {
@@ -184,14 +192,17 @@
   .restaurants__list-card {
     align-items: center;
     width: 90%;
+    padding-top: 40px;
+    gap: 40px;
   }
   .restaurants__list-card .restaurants__card {
     flex: 1;
   }
   .list-card__row {
     display: flex;
-    gap: 18px;
+    gap: 90px;
     width: 100%;
+    justify-content: center;
   }
 }
 .reservation {

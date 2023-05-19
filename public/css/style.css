@@ -157,6 +157,7 @@
   text-decoration: none;
   color: black;
   max-width: 500px;
+  height: 250px;
 }
 .restaurants__list-card .restaurants__card .restaurants__img {
   width: 100%;
@@ -179,7 +180,14 @@
   margin-right: 20px;
 }
 .restaurants__list-card .restaurants__card .star:hover {
-  background-color: black;
+  animation: fill 0.3s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 @media (min-width: 376px) {
@@ -197,6 +205,9 @@
   }
   .restaurants__list-card .restaurants__card {
     flex: 1;
+  }
+  .restaurants__list-card .restaurants__card .restaurants__img {
+    height: 180px;
   }
   .list-card__row {
     display: flex;

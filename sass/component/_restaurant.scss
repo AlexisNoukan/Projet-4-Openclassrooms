@@ -7,15 +7,21 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-
+  .list-card__row {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
   .restaurants__card {
+    display: flex;
+    flex-direction: column;
     border: 1px;
     border-radius: 20px;
     background-color: white;
     text-decoration: none;
     color: black;
     max-width: 500px;
-    height: 250px;
+    height: 200px;
     .restaurants__img {
       width: 100%;
       object-fit: cover;
@@ -75,17 +81,20 @@
     width: 90%;
     padding-top: 40px;
     gap: 40px;
+
+    .list-card__row {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 90px;
+      width: 100%;
+    }
     .restaurants__card {
       flex: 1;
+      height: 250px;
       .restaurants__img {
         height: 180px;
       }
     }
-  }
-  .list-card__row {
-    display: flex;
-    gap: 90px;
-    width: 100%;
-    justify-content: center;
   }
 }

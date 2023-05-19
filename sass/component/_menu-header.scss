@@ -1,15 +1,18 @@
 .menu-header {
   display: flex;
   align-items: center;
-  gap: 65px;
   padding: 15px;
-}
-.menu-header__link {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.menu-header__logo {
-  text-align: center;
+  .menu-header__link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    left: 10px;
+    width: 5%;
+    text-align: center;
+  }
+  .menu-header__logo {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+  }
 }

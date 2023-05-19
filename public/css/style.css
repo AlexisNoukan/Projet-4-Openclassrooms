@@ -135,18 +135,20 @@
 .menu-header {
   display: flex;
   align-items: center;
-  gap: 65px;
   padding: 15px;
 }
-
-.menu-header__link {
+.menu-header .menu-header__link {
   text-decoration: none;
   color: black;
   font-weight: bold;
-}
-
-.menu-header__logo {
+  left: 10px;
+  width: 5%;
   text-align: center;
+}
+.menu-header .menu-header__logo {
+  display: flex;
+  justify-content: center;
+  width: 90%;
 }
 
 .restaurants {
@@ -160,14 +162,21 @@
   flex-direction: column;
   gap: 18px;
 }
+.restaurants__list-card .list-card__row {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 .restaurants__list-card .restaurants__card {
+  display: flex;
+  flex-direction: column;
   border: 1px;
   border-radius: 20px;
   background-color: white;
   text-decoration: none;
   color: black;
   max-width: 500px;
-  height: 250px;
+  height: 200px;
 }
 .restaurants__list-card .restaurants__card .restaurants__img {
   width: 100%;
@@ -213,17 +222,19 @@
     padding-top: 40px;
     gap: 40px;
   }
+  .restaurants__list-card .list-card__row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 90px;
+    width: 100%;
+  }
   .restaurants__list-card .restaurants__card {
     flex: 1;
+    height: 250px;
   }
   .restaurants__list-card .restaurants__card .restaurants__img {
     height: 180px;
-  }
-  .list-card__row {
-    display: flex;
-    gap: 90px;
-    width: 100%;
-    justify-content: center;
   }
 }
 .reservation {
@@ -318,6 +329,40 @@
     padding-bottom: 30px;
   }
 }
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: opacity 0.75s visibility 0.75s;
+}
+.loader .loader__hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader .loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid rgba(221, 221, 221, 0.8666666667);
+  border-top-color: #7449f5;
+  border-radius: 50%;
+  animation: loading 0.75s;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 .menu {
   display: flex;
   flex-direction: column;

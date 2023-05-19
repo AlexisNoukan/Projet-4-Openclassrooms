@@ -381,6 +381,9 @@
 }
 
 .menu__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px;
   border-radius: 10px;
   padding: 10px;
@@ -388,15 +391,17 @@
   width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-.menu__card-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.menu__card .menu__card-text {
+  text-align: left;
 }
-
-.check-icon {
+.menu__card .menu__card-prix {
+  text-align: right;
+}
+.menu__card .check-icon {
   visibility: hidden;
+}
+.menu__card .check-icon:hover {
+  visibility: visible;
 }
 
 .main {

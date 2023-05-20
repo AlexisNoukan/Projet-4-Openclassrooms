@@ -202,9 +202,7 @@
   display: none;
 }
 .restaurants__list-card .restaurants__card .star:hover .hidden {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
+  display: block;
   background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background-clip: text;
@@ -386,40 +384,82 @@
 
 .menu__card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border: 1px;
   border-radius: 10px;
   margin-top: 20px;
   width: 100%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
 }
-.menu__card .menu__card-text {
-  text-align: left;
-  padding: 10px;
+.menu__card__body {
+  padding: 12px;
+  width: 100%;
+  user-select: none;
+  transition: width ease-in-out 350ms;
+  position: relative;
 }
-.menu__card .menu__card-prix {
-  text-align: right;
+.menu__card__body__title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  transition: width ease-in-out 350ms;
 }
-.menu__card .menu__card-icon {
-  visibility: hidden;
+.menu__card__body__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+  transition: width ease-in-out 350ms;
+}
+.menu__card__body__text p {
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+.menu__card__body__text span {
+  font-weight: 700;
+}
+.menu__card__body__icon {
   background-color: #99e2d0;
-  border-radius: 0 10px 10px 0;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 60px;
   height: 100%;
-  width: 4%;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform ease-in-out 350ms;
 }
-.menu__card .check-icon {
+.menu__card__body__icon .fa-circle-check {
   color: white;
+  font-size: 22px;
 }
-.menu__card .check-icon:hover {
-  visibility: visible;
+.menu__card:hover .menu__card__body__title,
+.menu__card:hover .menu__card__body__text {
+  width: calc(100% - 60px);
 }
-.menu__card .slide-left {
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
-  animation: slide-left 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+.menu__card:hover .fa-circle-check {
+  animation: 0.3s 0.2s cubic-bezier(0, 0.4, 0.25, 1) rotate-check;
+}
+.menu__card:hover .menu__card__body__icon {
+  transform: translateX(-60px);
 }
 
+@keyframes rotate-check {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
 .main {
   display: flex;
   flex-direction: column;

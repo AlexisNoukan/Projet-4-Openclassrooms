@@ -14,37 +14,80 @@
 }
 .menu__card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border: 1px;
   border-radius: 10px;
   margin-top: 20px;
   width: 100%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  .menu__card-text {
-    text-align: left;
-    padding: 10px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  overflow: hidden;
+  &__body {
+    padding: 12px;
+    width: 100%;
+    user-select: none;
+    transition: width ease-in-out 350ms;
+    position: relative;
+    &__title {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      transition: width ease-in-out 350ms;
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 5px;
+      transition: width ease-in-out 350ms;
+      & p {
+        font-weight: 300;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 10px;
+      }
+      & span {
+        font-weight: 700;
+      }
+    }
+    &__icon {
+      background-color: #99e2d0;
+      position: absolute;
+      top: 0;
+      right: -60px;
+      width: 60px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: transform ease-in-out 350ms;
+      .fa-circle-check {
+        color: white;
+        font-size: 22px;
+      }
+    }
   }
-  .menu__card-prix {
-    text-align: right;
+  &:hover {
+    .menu__card__body__title,
+    .menu__card__body__text {
+      width: calc(100% - 60px);
+    }
+    .fa-circle-check {
+      animation: 0.3s 0.2s cubic-bezier(0, 0.4, 0.25, 1) rotate-check;
+    }
+    .menu__card__body__icon {
+      transform: translateX(-60px);
+    }
   }
-  .menu__card-icon {
-    visibility: hidden;
-    background-color: #99e2d0;
-    border-radius: 0 10px 10px 0;
-    height: 100%;
-    width: 4%;
-    padding: 20px;
+}
+@keyframes rotate-check {
+  from {
+    transform: rotate(90deg);
   }
-  .check-icon {
-    color: white;
-  }
-  .check-icon:hover {
-    visibility: visible;
-  }
-  .slide-left {
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19)
-      both;
-    animation: slide-left 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+  to {
+    transform: rotate(1turn);
   }
 }

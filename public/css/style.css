@@ -386,22 +386,34 @@
   align-items: center;
   border: 1px;
   border-radius: 10px;
-  padding: 10px;
   margin-top: 20px;
   width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .menu__card .menu__card-text {
   text-align: left;
+  padding: 10px;
 }
 .menu__card .menu__card-prix {
   text-align: right;
 }
-.menu__card .check-icon {
+.menu__card .menu__card-icon {
   visibility: hidden;
+  background-color: #99e2d0;
+  border-radius: 0 10px 10px 0;
+  height: 100%;
+  width: 4%;
+  padding: 20px;
+}
+.menu__card .check-icon {
+  color: white;
 }
 .menu__card .check-icon:hover {
   visibility: visible;
+}
+.menu__card .slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+  animation: slide-left 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
 }
 
 .main {

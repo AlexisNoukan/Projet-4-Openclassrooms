@@ -1,7 +1,6 @@
 @import "./base/reset", "./base/typography";
 @import "./component/buttons", "./component/buttons",
-  "./component/fonctionement", "./component/hearth-icon",
-  "./component/_menu-header", "./component/restaurant",
-  "./component/reservation";
+  "./component/fonctionement", "./component/_menu-header",
+  "./component/restaurant", "./component/reservation";
 @import "./layout/footer", "./layout/header", "./layout/loader", "./layout/menu";
 @import "./pages/home", "./pages/restaurants";

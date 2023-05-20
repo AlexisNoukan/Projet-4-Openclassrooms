@@ -34,15 +34,24 @@
     .restaurants__card-content {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
     }
     .restaurants__alert {
       position: absolute;
     }
     .star {
       margin-right: 20px;
+      font-size: 24px;
+
+      .hidden {
+        display: none;
+      }
     }
-    .star:hover {
+    .star:hover .visible {
+      display: none;
+    }
+
+    .star:hover .hidden {
       animation: fill 0.3s ease-in-out;
       display: inline-block;
       opacity: 1;
@@ -62,6 +71,7 @@
         #e86edb,
         #ff79da
       );
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: bold;

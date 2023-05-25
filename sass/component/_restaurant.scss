@@ -38,41 +38,13 @@
     }
     .restaurants__alert {
       position: absolute;
-    }
-    .star {
-      margin-right: 20px;
-      font-size: 24px;
-
-      .hidden {
-        display: none;
+      span {
+        border: 1px;
+        background-color: #99e2d0;
+        padding: 5px;
+        border-radius: 5px;
+        color: #008766;
       }
-    }
-    .star:hover .visible {
-      display: none;
-    }
-
-    .star:hover .hidden {
-      display: block;
-      background: linear-gradient(
-        to left,
-        #9356dc,
-        #b35cdc,
-        #cf64dc,
-        #e86edb,
-        #ff79da
-      );
-      background: -webkit-linear-gradient(
-        to left,
-        #9356dc,
-        #b35cdc,
-        #cf64dc,
-        #e86edb,
-        #ff79da
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: bold;
     }
   }
 }

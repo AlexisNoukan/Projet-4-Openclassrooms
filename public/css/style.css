@@ -191,24 +191,12 @@
 .restaurants__list-card .restaurants__card .restaurants__alert {
   position: absolute;
 }
-.restaurants__list-card .restaurants__card .star {
-  margin-right: 20px;
-  font-size: 24px;
-}
-.restaurants__list-card .restaurants__card .star .hidden {
-  display: none;
-}
-.restaurants__list-card .restaurants__card .star:hover .visible {
-  display: none;
-}
-.restaurants__list-card .restaurants__card .star:hover .hidden {
-  display: block;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
+.restaurants__list-card .restaurants__card .restaurants__alert span {
+  border: 1px;
+  background-color: #99e2d0;
+  padding: 5px;
+  border-radius: 5px;
+  color: #008766;
 }
 
 @media (min-width: 376px) {
@@ -273,6 +261,28 @@
     gap: 50px;
   }
 }
+.hearth-icon {
+  margin-right: 20px;
+  font-size: 24px;
+}
+.hearth-icon .hidden {
+  display: none;
+}
+
+.hearth-icon:hover .visible {
+  display: none;
+}
+
+.hearth-icon:hover .hidden {
+  display: block;
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .footer {
   color: white;
   background-color: #353535;

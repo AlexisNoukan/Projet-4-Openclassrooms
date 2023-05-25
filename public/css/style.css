@@ -87,6 +87,12 @@
   border-radius: 20px;
   text-decoration: none;
 }
+.fonctionnement .fonctionnement__btns .fonctionnement__icon {
+  color: black;
+}
+.fonctionnement .fonctionnement__btns .fonctionnement__btn:hover .fonctionnement__icon {
+  color: #9356dc;
+}
 .fonctionnement .fonctionnement__btns .fonctionnement__number {
   background-color: #9356dc;
   color: white;
@@ -192,6 +198,9 @@
   position: relative;
 }
 .restaurants__list-card .restaurants__card .restaurants__alert span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   bottom: 150px;
   position: absolute;
   right: 10px;

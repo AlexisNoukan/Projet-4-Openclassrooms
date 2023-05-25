@@ -12,6 +12,12 @@
       border-radius: 20px;
       text-decoration: none;
     }
+    .fonctionnement__icon {
+      color: black;
+    }
+    .fonctionnement__btn:hover .fonctionnement__icon {
+      color: #9356dc;
+    }
     .fonctionnement__number {
       background-color: #9356dc;
       color: white;

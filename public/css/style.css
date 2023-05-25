@@ -189,13 +189,16 @@
   align-items: center;
 }
 .restaurants__list-card .restaurants__card .restaurants__alert {
-  position: absolute;
+  position: relative;
 }
 .restaurants__list-card .restaurants__card .restaurants__alert span {
+  bottom: 150px;
+  position: absolute;
+  right: 10px;
   border: 1px;
   background-color: #99e2d0;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #008766;
 }
 
@@ -225,6 +228,9 @@
   }
   .restaurants__list-card .restaurants__card .restaurants__img {
     height: 180px;
+  }
+  .restaurants__list-card .restaurants__card .restaurants__alert span {
+    bottom: 200px;
   }
 }
 .reservation {

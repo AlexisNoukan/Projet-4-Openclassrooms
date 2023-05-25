@@ -37,12 +37,16 @@
       align-items: center;
     }
     .restaurants__alert {
-      position: absolute;
+      position: relative;
+
       span {
+        bottom: 150px;
+        position: absolute;
+        right: 10px;
         border: 1px;
         background-color: #99e2d0;
         padding: 5px;
-        border-radius: 5px;
+        border-radius: 2px;
         color: #008766;
       }
     }
@@ -74,6 +78,11 @@
       height: 250px;
       .restaurants__img {
         height: 180px;
+      }
+      .restaurants__alert {
+        span {
+          bottom: 200px;
+        }
       }
     }
   }

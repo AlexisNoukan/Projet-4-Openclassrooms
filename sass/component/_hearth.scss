@@ -1,7 +1,10 @@
 .hearth-icon {
   margin-right: 20px;
   font-size: 24px;
-
+  position: relative;
+  top: -70px;
+  left: 270px;
+  overflow: hidden;
   .hidden {
     display: none;
   }
@@ -32,4 +35,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+@media (min-width: 376px) {
+  .hearth-icon {
+    left: -150px;
+    top: 200px;
+  }
 }

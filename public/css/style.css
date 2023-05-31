@@ -316,6 +316,10 @@
   width: 137px;
   color: white;
 }
+.footer .link-mail {
+  text-decoration: none;
+  color: white;
+}
 
 @media (min-width: 376px) {
   .footer {

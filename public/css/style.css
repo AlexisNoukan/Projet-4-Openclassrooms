@@ -456,7 +456,11 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  padding-right: 10px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15.0431px;
+  line-height: 18px;
+  width: 287px;
 }
 .menu__card__body__text span {
   font-weight: 700;

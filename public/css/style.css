@@ -253,6 +253,10 @@
     bottom: 200px;
   }
 }
+.fa-rotate-by {
+  transform: unset;
+}
+
 .reservation {
   background-color: #f6f6f6;
   display: flex;

@@ -166,7 +166,6 @@
 .restaurants__list-card {
   display: flex;
   flex-direction: column;
-  gap: 18px;
 }
 .restaurants__list-card .list-card__row {
   display: flex;
@@ -280,14 +279,14 @@
     gap: 50px;
   }
 }
-.hearth-icon {
-  margin-right: 20px;
+.restaurant-hearth {
   font-size: 24px;
   position: relative;
   top: -70px;
   left: 270px;
   overflow: hidden;
 }
+
 .hearth-icon .hidden {
   display: none;
 }

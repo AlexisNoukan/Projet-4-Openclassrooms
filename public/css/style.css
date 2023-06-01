@@ -102,7 +102,10 @@
 .fonctionnement .fonctionnement__btns .fonctionnement__icon {
   color: black;
 }
-.fonctionnement .fonctionnement__btns .fonctionnement__btn:hover .fonctionnement__icon {
+.fonctionnement
+  .fonctionnement__btns
+  .fonctionnement__btn:hover
+  .fonctionnement__icon {
   color: #9356dc;
 }
 .fonctionnement .fonctionnement__btns .fonctionnement__number {
@@ -253,10 +256,6 @@
     bottom: 200px;
   }
 }
-.fa-rotate-by {
-  transform: unset;
-}
-
 .reservation {
   background-color: #f6f6f6;
   display: flex;
@@ -305,8 +304,22 @@
 
 .hearth-icon:hover .hidden {
   display: block;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: linear-gradient(
+    to left,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
+  background: -webkit-linear-gradient(
+    to left,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -561,3 +574,7 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.fa-rotate-by {
+  transform: unset;
+}

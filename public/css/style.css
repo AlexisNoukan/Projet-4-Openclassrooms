@@ -41,6 +41,10 @@
   background-color: #f6f6f6;
 }
 
+.button:hover {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+}
+
 @media (min-width: 800px) {
   .button__order {
     margin: 0 100px;
@@ -68,6 +72,10 @@
   justify-content: center;
   align-items: center;
   background-color: #f6f6f6;
+}
+
+.button:hover {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 @media (min-width: 800px) {
@@ -214,7 +222,7 @@
   color: #008766;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 650px) {
   .restaurants {
     display: flex;
     align-items: center;
@@ -279,14 +287,10 @@
     gap: 50px;
   }
 }
-.restaurant-hearth {
+.hearth-icon {
+  margin-right: 20px;
   font-size: 24px;
-  position: relative;
-  top: -70px;
-  left: 270px;
-  overflow: hidden;
 }
-
 .hearth-icon .hidden {
   display: none;
 }

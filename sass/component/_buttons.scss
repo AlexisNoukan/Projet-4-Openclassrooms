@@ -20,6 +20,9 @@
   align-items: center;
   background-color: #f6f6f6;
 }
+.button:hover {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+}
 
 @media (min-width: 800px) {
   .button__order {

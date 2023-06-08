@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 520px) {
   .restaurants {
     display: flex;
     align-items: center;
@@ -80,7 +80,6 @@
       height: 250px;
       .restaurants__img {
         height: 180px;
-      
       }
       .restaurants__alert {
         span {

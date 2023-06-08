@@ -131,7 +131,7 @@
   margin-left: 15px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 960px) {
   .fonctionnement {
     display: flex;
     flex-direction: column;
@@ -226,7 +226,7 @@
   color: #008766;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 520px) {
   .restaurants {
     display: flex;
     align-items: center;

@@ -104,7 +104,7 @@
   text-decoration: none;
 }
 .fonctionnement .fonctionnement__btns .fonctionnement__icon {
-  color: black;
+  color: #7e7e7e;
 }
 .fonctionnement .fonctionnement__btns .fonctionnement__btn:hover .fonctionnement__icon {
   color: #9356dc;

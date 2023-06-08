@@ -43,6 +43,8 @@
 
 .button:hover {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  opacity: 95%;
+  box-shadow: 0px 4px 10px black;
 }
 
 @media (min-width: 800px) {
@@ -76,6 +78,8 @@
 
 .button:hover {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  opacity: 95%;
+  box-shadow: 0px 4px 10px black;
 }
 
 @media (min-width: 800px) {
@@ -102,10 +106,7 @@
 .fonctionnement .fonctionnement__btns .fonctionnement__icon {
   color: black;
 }
-.fonctionnement
-  .fonctionnement__btns
-  .fonctionnement__btn:hover
-  .fonctionnement__icon {
+.fonctionnement .fonctionnement__btns .fonctionnement__btn:hover .fonctionnement__icon {
   color: #9356dc;
 }
 .fonctionnement .fonctionnement__btns .fonctionnement__number {
@@ -284,6 +285,11 @@
   font-weight: 500;
   font-size: 16px;
 }
+.reservation__btn:hover {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  opacity: 95%;
+  box-shadow: 0px 4px 10px black;
+}
 
 @media (min-width: 800px) {
   .reservation {
@@ -304,22 +310,8 @@
 
 .hearth-icon:hover .hidden {
   display: block;
-  background: linear-gradient(
-    to left,
-    #9356dc,
-    #b35cdc,
-    #cf64dc,
-    #e86edb,
-    #ff79da
-  );
-  background: -webkit-linear-gradient(
-    to left,
-    #9356dc,
-    #b35cdc,
-    #cf64dc,
-    #e86edb,
-    #ff79da
-  );
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -556,7 +548,7 @@
 .main__img {
   object-fit: cover;
   height: 275px;
-  width: 375px;
+  width: 100%;
   left: 0;
   position: absolute;
 }
@@ -574,7 +566,3 @@
 }
 
 /*# sourceMappingURL=style.css.map */
-
-.fa-rotate-by {
-  transform: unset !important;
-}
